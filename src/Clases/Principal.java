@@ -15,7 +15,6 @@ public class Principal extends javax.swing.JFrame {
     ConexionBD con = new ConexionBD();
     Connection cn = con.conexion();
     String atributo,ad;
-    
     Validar valid = new Validar();
     
     public Principal() {
@@ -489,7 +488,7 @@ public class Principal extends javax.swing.JFrame {
                 Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex);
             }
         }  else {
-            JOptionPane.showMessageDialog(null, "Fila no seleccionada");
+            JOptionPane.showMessageDialog(null, "Fila no seleccionada para ser eliminada");
            
         }
     }//GEN-LAST:event_jButton4ActionPerformed
